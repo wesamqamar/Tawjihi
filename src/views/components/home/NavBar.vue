@@ -18,7 +18,25 @@
 
 <script>
 export default {
-    props: ["items"]
+    
+  data() {
+    return {
+      items: [
+        {
+          id: 1,
+          label: "المسارات التعليمية",
+        },
+        {
+          id: 2,
+          label: "عن الموقع",
+        },
+        {
+          id: 3,
+          label: "اتصل بنا",
+        },
+      ],
+    };
+  },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-container>
-      <NavBar :items="navItems" />
+      <NavBar />
     </b-container>
   </div>
 </template>
@@ -10,24 +10,6 @@
 export default {
   components: {
     NavBar: () => import("./components/home/NavBar.vue"),
-  },
-  data() {
-    return {
-      navItems: [
-        {
-          id: 1,
-          label: "المسارات التعليمية",
-        },
-        {
-          id: 2,
-          label: "عن الموقع",
-        },
-        {
-          id: 3,
-          label: "اتصل بنا",
-        },
-      ],
-    };
   },
 };
 </script>
