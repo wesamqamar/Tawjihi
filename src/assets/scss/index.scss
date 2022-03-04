@@ -1,3 +1,69 @@
-@import url('./default.scss');
-@import url('./utils.scss');
-@import url('./main.scss');
+$primaryColor: #707070;
+$secondaryColor: #535151;;
+$blueColor: #20577A;;
+
+.logoFont {
+    font-family: logoFont;
+}
+.primaryFont {
+    font-family: primaryFont;
+}
+
+body {
+    font-family: primaryFont;
+    font-size: 18px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'logoFont';
+    src: url('/fonts/Bauhaus.ttf');
+  }
+@font-face {
+    font-family: 'primaryFont';
+    src: url('/fonts/SEGOEUI.ttf');
+  }
+
+/* Colors */
+.primaryColor {
+  color: $primaryColor;
+}
+.secondaryColor {
+  color: $secondaryColor;
+}
+
+/* Background Colors */
+.bgPrimaryColor {
+  background: $primaryColor;
+}
+.bg-blue {
+  background: $blueColor;
+}
+
+
+
+
+/* ====================================== Start Coding styles ====================================== */
+.navbar {
+
+    .logo {
+        .logoText {
+            position: relative;
+            top: 7px;
+        }
+    }
+
+    .loginBtn {
+       width: 150px;
+       height: 45px;
+    }
+
+    ul {
+        .link {
+            margin: 0 15px;            
+        }
+        .link:hover {
+            border-bottom: 1px solid $blueColor;
+        }
+    }
+}
