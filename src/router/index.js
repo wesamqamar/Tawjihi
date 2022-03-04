@@ -11,6 +11,13 @@ const routes = [
       return import('../views/Home.vue')
     }
   },
+  {
+    path: '/login',
+    name: 'Login',
+    component: function () {
+      return import('../views/Login.vue')
+    }
+  },
 ]
 
 const router = new VueRouter({
