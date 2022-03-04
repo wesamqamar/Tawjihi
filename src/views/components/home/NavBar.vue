@@ -1,5 +1,4 @@
 <template>
-  <b-container>
   <b-navbar toggleable="lg">
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -15,7 +14,6 @@
       <Logo />
     </b-navbar-brand>
   </b-navbar>
-  </b-container>
 </template>
 
 <script>

@@ -1,16 +1,15 @@
 <template>
-  <div>
+  <b-container>
     <NavBar />
-    <div>
-      <!-- <img style="width:800px;height:500px;" src="/img/home/bg.png" alt="" /> -->
-    </div>
-  </div>
+    <HomePage />
+  </b-container>
 </template>
 
 <script>
 export default {
   components: {
     NavBar: () => import("./components/home/NavBar.vue"),
+    HomePage: () => import("./components/home/HomePage.vue"),
   },
 };
 </script>

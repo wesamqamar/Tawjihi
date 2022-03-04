@@ -67,3 +67,51 @@ body {
         }
     }
 }
+
+.homePage {
+    img {
+        width: 120%; height: 500px; position: relative; left: 17%
+    }
+    .content {
+        width: 100%;
+        height: 400px;
+        background: #e6e6e6;
+        border: 1px solid #ccc;
+        border-radius: 5%;
+        padding: 60px;
+        color: #707070;
+        margin: 50px auto;
+    }
+    p:first-child {
+        margin-top: 50px
+    }
+    .actionsBtn {
+        margin-top: 40px;
+        .registerBtn {
+            width: auto;
+            min-width: 120px;
+            margin-left: 15px;
+            background: none;
+            border: 1px solid #20577a;
+            color: #707070;
+        }
+        .exploreBtn {
+            width: auto;
+              min-width: 120px;
+              background: #20577a;
+              border: 1px solid #20577a;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .homePage {
+        img {
+            width: 100%;
+        }
+    }
+}
