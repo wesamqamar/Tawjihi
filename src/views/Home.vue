@@ -1,8 +1,9 @@
 <template>
   <div>
-    <b-container>
-      <NavBar />
-    </b-container>
+    <NavBar />
+    <div>
+      <!-- <img style="width:800px;height:500px;" src="/img/home/bg.png" alt="" /> -->
+    </div>
   </div>
 </template>
 
