@@ -14,7 +14,7 @@ Vue.use(BootstrapVue)
 /* import scss file */
 import '../src/assets/scss/index.scss';
 /* .........................*/
-
+import './global.js';
 
 new Vue({
   router,
