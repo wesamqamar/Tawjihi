@@ -14,6 +14,8 @@
           <div class="actionsBtn">
             <b-button pill class="registerBtn">سجل الآن</b-button>
             <b-button pill class="exploreBtn">استكشف المسارات</b-button>
+
+            
           </div>
         </div>
       </b-col>
