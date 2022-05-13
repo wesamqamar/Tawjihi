@@ -73,18 +73,18 @@
 
                   <p>يمكنك البدء بعملية الدفع على الفور</p>
                
-               <div class="">
+               <div>
                   <p>
-                  <img width="40" height="40" src="img/g2.png" alt="" /> ابدا
-                  بحسابك الشخصي
-                </p>
+                  <img style="position:relative;left:20px;"  width="40" height="40" src="img/g2.png" alt="" /> 
+                  <span style="display:inline-block;position:relative;left:10px;">ابدأ بحسابك الشخصي</span>
                 <p>
-                  <img width="40" height="40" src="img/g3.png" alt="" />طرق
-                  الدفع
+                  <img style="position:relative;left:55px;"  width="40" height="40" src="img/g3.png" alt="" />
+                  <span style="display:inline-block;position:relative;left:43px;">طرق الدفع</span>
                 </p>
+
                 <p>
-                  <img width="40" height="40" src="img/g2.png" alt="" /> ملفك
-                  الشخصي
+                  <img style="position:relative;left:45 px;"  width="40" height="40" src="img/g2.png" alt="" /> 
+                  <span style="display:inline-block;position:relative;left:30px">ملفك الشخصي</span>
                 </p>
                </div>
                  </div>
