@@ -67,27 +67,69 @@
               <b-button pill class="exploreBtn" v-b-modal.payModal>
                 ادفع الان
               </b-button>
-              <b-modal id="payModal" size="md" title="BootstrapVue">
+              <b-modal id="payModal" size="md" :hide-footer="true" :hide-header="true">
                 <div class="text-center">
+                  <img width="100px " height="100px"  src="img/mp.png" alt="">
                   <h2>مرحبا بك</h2>
 
                   <p>يمكنك البدء بعملية الدفع على الفور</p>
-               
-               <div>
-                  <p>
-                  <img style="position:relative;left:20px;"  width="40" height="40" src="img/g2.png" alt="" /> 
-                  <span style="display:inline-block;position:relative;left:10px;">ابدأ بحسابك الشخصي</span>
-                <p>
-                  <img style="position:relative;left:55px;"  width="40" height="40" src="img/g3.png" alt="" />
-                  <span style="display:inline-block;position:relative;left:43px;">طرق الدفع</span>
-                </p>
 
-                <p>
-                  <img style="position:relative;left:45 px;"  width="40" height="40" src="img/g2.png" alt="" /> 
-                  <span style="display:inline-block;position:relative;left:30px">ملفك الشخصي</span>
-                </p>
-               </div>
-                 </div>
+                  <div>
+                    <p>
+                      <img
+                        style="position: relative; left: 20px"
+                        width="40"
+                        height="40"
+                        src="img/g2.png"
+                        alt=""
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          position: relative;
+                          left: 10px;
+                        "
+                        >ابدأ بحسابك الشخصي</span
+                      >
+                    </p>
+
+                    <p>
+                      <img
+                        style="position: relative; left: 55px"
+                        width="40"
+                        height="40"
+                        src="img/g3.png"
+                        alt=""
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          position: relative;
+                          left: 43px;
+                        "
+                        >طرق الدفع</span
+                      >
+                    </p>
+
+                    <p>
+                      <img
+                        style="position: relative; left: 43px"
+                        width="40"
+                        height="40"
+                        src="img/g2.png"
+                        alt=""
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          position: relative;
+                          left: 30px;
+                        "
+                        >ملفك الشخصي</span
+                      >
+                    </p>
+                  </div>
+                </div>
               </b-modal>
             </div>
           </div>
@@ -116,4 +158,7 @@ export default {
 </script>
 
 <style>
+.modal-content {
+  border-radius: 5.3rem;
+}
 </style>
