@@ -18,6 +18,20 @@ const routes = [
       return import('../views/Login.vue')
     }
   },
+  {
+    path: '/register',
+    name: 'register',
+    component: function () {
+      return import('../views/Register.vue')
+    }
+  },
+  {
+    path: '/pay',
+    name: 'pay',
+    component: function () {
+      return import('../views/pay.vue')
+    }
+  },
 ]
 
 const router = new VueRouter({
