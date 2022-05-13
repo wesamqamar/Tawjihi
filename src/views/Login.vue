@@ -11,7 +11,7 @@
             <h2>تسجيل دخول</h2>
             <p>
               مستخدم جديد؟
-              <b-link @click="goTopage('Login')">انشاء حساب</b-link>
+              <b-link @click="goToPage('register')">انشاء حساب</b-link>
             </p>
 
             <h5>البريد الاكتروني</h5>
@@ -64,29 +64,10 @@ export default {
       show: true,
     };
   },
+  methods: {
+    goToPage(page) {
+      this.$router.push({ name: page });
+    },
+  },
 };
 </script>
-
-<style>
-.customInputStyle,
-.customInputStyle:focus {
-  background: none;
-  border: 0;
-  border-bottom: 3px solid #20577a;
-  bottom: 5px;
-  box-shadow: unset !important;
-  border-radius: 0;
-}
-
-/* Change the white to any color */
-.customInputStyle:-webkit-autofill,
-.customInputStyle:-webkit-autofill:hover, 
-.customInputStyle:-webkit-autofill:focus, 
-.customInputStyle:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px #E6E6E6 inset !important;
-      border: 0;
-  border-bottom: 3px solid #20577a;
-  background: none !important;
-
-}
-</style>

@@ -2,124 +2,118 @@
   <b-container>
     <NavBar :isNavbar="false" />
     <!-- <RegisterPage /> -->
-     <div class="homePage">
-    <b-row>
-      <b-col md="5">
-        <img  src="img/bg.png" alt="" />
-      </b-col>
-      <b-col md="7">
-        <div class="content">
-            <p> لديك حساب؟ <b-link @click="goToPage('Login')">تسجيل دخول</b-link> </p>
-            <h2>انشاء حساب جديد</h2>
-    
+    <div class="homePage">
+      <b-container>
+        <b-row>
+          <b-col md="7">
+            <div class="content2">
+              <p>
+                لديك حساب؟
+                <b-link @click="goToPage('Login')">تسجيل دخول</b-link>
+              </p>
+              <h2>انشاء حساب جديد</h2>
+
               <b-row>
 
-              <b-col md="6">
-                <div>
-                   <h5> الاسم الاول   </h5>
-
-                </div>
-            </b-col>
-              <b-col md="6"> <div>
-                   <h5> اسم العائلة </h5>
-                   
-                </div></b-col>
-          </b-row>
-          <b-row>
-              <b-col md="6">
-                <div>
-                    <b-form-input v-model="text"></b-form-input>
-
-                </div>
-            </b-col>
-              <b-col md="6"> <div>
-                    <b-form-input v-model="text1" ></b-form-input>
-                   
-                </div></b-col>
-          </b-row>
-           <h5> البريد الاكتروني </h5>
-            <b-form-input v-model="email" placeholder=""></b-form-input>
-
-            
-              <b-row>
-
-              <b-col md="6">
-                <div>
-                   <h5> كلمة المرور    </h5>
-
-                </div>
-            </b-col>
-              <b-col md="6"> <div>
-                   <h5> تاكيد كلمة المرور </h5>
-                   
-                </div></b-col>
-          </b-row>
-
-             <b-row>
-              <b-col md="6">
-                <div>
+                <b-col md="6">
+                  <div>
+                    <label>الاسم الأول</label>
                     <b-form-input
-                    type="password"
-                     v-model="password" ></b-form-input>
+                      class="customInputStyle"
+                      v-model="inputs.first_name"
+                    ></b-form-input>
+                  </div>
+                </b-col>
 
-                </div>
+                <b-col md="6">
+                  <div>
+                    <label>اسم العائلة</label>
+                    <b-form-input
+                      class="customInputStyle"
+                      v-model="inputs.last_name"
+                    ></b-form-input>
+                  </div>
+                </b-col>
+
+                <b-col md="12">
+                  <div class="mt-1">
+                    <label>البريد الإلكتروني</label>
+                    <b-form-input
+                      class="customInputStyle"
+                      v-model="inputs.email"
+                    ></b-form-input>
+                  </div>
+                </b-col>
+
+                <b-col md="6">
+                  <div >
+                    <label>كلمة المرور</label>
+                    <b-form-input
+                      type="password"
+                      class="customInputStyle"
+                      v-model="inputs.password"
+                    ></b-form-input>
+                  </div>
+                </b-col>
+
+                <b-col md="6">
+                  <div>
+                    <label>تأكيد المرور</label>
+                    <b-form-input
+                      type="password"
+                      class="customInputStyle"
+                      v-model="inputs.confirm_password"
+                    ></b-form-input>
+                  </div>
+                </b-col>
                 
-            </b-col>
+                
 
-              <b-col md="6"> <div>
-                    <b-form-input
-                    type="password"
-                     v-model="password1"
-                     ></b-form-input>
-                   
-                </div></b-col>
-          </b-row>
+              <b-col md="12">
+                <p class="my-3">استخدم 8 أحرف أو أكثر باستعمال مزيج من الأحرف والأرقام والرموز</p>
+                 <div class="actionsBtn my-3">
+              <b-button @click="goToPage('pay')" style="float:left;" pill class="exploreBtn"> التالي </b-button>
+            </div>
+              </b-col>            
+              </b-row>
+            </div>
+          </b-col>
 
-          <div class="actionsBtn">
-            
-            <b-button pill class="exploreBtn"> التالي </b-button>
-
-            
-          </div>
-        </div>
-      </b-col>
-      
-    </b-row>
-  </div>
+          <b-col md="5">
+            <img style="position: relative; right: 0" src="img/bg.png" alt="" />
+          </b-col>
+        </b-row>
+      </b-container>
+     
+    </div>
   </b-container>
-  
 </template>
 
 <script>
 export default {
   components: {
     NavBar: () => import("./components/NavBar.vue"),
-
-
   },
 
   methods: {
     goToPage(page) {
-      this.$router.push({name: page})
+      this.$router.push({ name: page });
     },
-    onSubmit() {
-
-    }
+    onSubmit() {},
   },
-  
-    data() {
-      return {
-        text: '',
-        text1:'',
-        email:'',
-        password: '',
-        password1:'',
-      }
-    }
-    
-    
-};
 
+  data() {
+    return {
+      inputs: {
+        first_name: null,
+        last_name: null,
+        email: null,
+        password: null,
+        confirm_password: null,
+      },
+    };
+  },
+};
 </script>
 
 <style>
