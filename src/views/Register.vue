@@ -5,11 +5,11 @@
      <div class="homePage">
     <b-row>
       <b-col md="5">
-        <img src="img/bg.png" alt="" />
+        <img  src="img/bg.png" alt="" />
       </b-col>
       <b-col md="7">
         <div class="content">
-            <p> لديك حساب؟ <b-link @click="goTopage('Login')">تسجيل دخول</b-link> </p>
+            <p> لديك حساب؟ <b-link @click="goToPage('Login')">تسجيل دخول</b-link> </p>
             <h2>انشاء حساب جديد</h2>
     
               <b-row>

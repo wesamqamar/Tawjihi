@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="goToPage('Home')">
     <h3
       class="
         d-inline-block
@@ -17,7 +17,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goToPage(home) {
+      this.$router.push({name: home})
+    }
+  }
+};
 </script>
 
 <style>

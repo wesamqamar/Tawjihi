@@ -12,7 +12,7 @@
           </p>
           <p>هل أنت مستعد لتعلم مهارات جديدة ؟</p>
           <div class="actionsBtn">
-            <b-button pill class="registerBtn">سجل الآن</b-button>
+            <b-button @click="goToPage('register')" pill class="registerBtn">سجل الآن</b-button>
             <b-button pill class="exploreBtn">استكشف المسارات</b-button>
 
             
@@ -24,7 +24,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goToPage(page) {
+      this.$router.push({name: page})
+    }
+  }
+};
 </script>
 
 <style>
