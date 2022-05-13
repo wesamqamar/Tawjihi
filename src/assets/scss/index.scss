@@ -84,6 +84,17 @@ body {
         color: #707070;
         margin: 50px auto;
     }
+    .content2 {
+        width: 100%;
+        min-height: 400px;
+        height: auto;
+        background: #e6e6e6;
+        border: 1px solid #ccc;
+        border-radius: 5%;
+        padding: 0 60px;
+        color: #707070;
+        margin: 50px auto;
+    }
     p:first-child {
         margin-top: 50px
     }
@@ -155,4 +166,27 @@ body {
         position: relative;
         left: 10px
     }
+}
+
+
+
+.customInputStyle,
+.customInputStyle:focus {
+  background: none;
+  border: 0;
+  border-bottom: 3px solid #20577a;
+  bottom: 5px;
+  box-shadow: unset !important;
+  border-radius: 0;
+}
+
+/* Change the white to any color */
+.customInputStyle:-webkit-autofill,
+.customInputStyle:-webkit-autofill:hover,
+.customInputStyle:-webkit-autofill:focus,
+.customInputStyle:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #e6e6e6 inset !important;
+  border: 0;
+  border-bottom: 3px solid #20577a;
+  background: none !important;
 }

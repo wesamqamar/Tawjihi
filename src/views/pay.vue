@@ -14,7 +14,7 @@
 
             <h5>رقم البطاقة</h5>
 
-            <b-form-input v-model="email"></b-form-input>
+            <b-form-input  v-model="email"></b-form-input>
             <b-row>
               <b-col md="6">
                 <div>
@@ -154,6 +154,11 @@ export default {
       password1: "",
     };
   },
+  methods: {
+    goToPage(page) {
+      this.$router.push({name: page})
+    }
+  }
 };
 </script>
 
